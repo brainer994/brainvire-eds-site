@@ -21,6 +21,20 @@
       "id": "hero",
       "fields": [
         {
+          "component": "text",
+          "valueType": "string",
+          "name": "heading",
+          "label": "Heading",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "name": "description",
+          "value": "",
+          "label": "Description",
+          "valueType": "string"
+        },
+        {
           "component": "reference",
           "valueType": "string",
           "name": "backgroundVideo",
@@ -31,7 +45,7 @@
           "component": "reference",
           "valueType": "string",
           "name": "backgroundImage",
-          "label": "Background Image",
+          "label": "Poster / Background Image",
           "multi": false
         },
         {
@@ -42,14 +56,24 @@
           "value": ""
         },
         {
-          "component": "richtext",
-          "name": "text",
-          "value": "",
-          "label": "Text",
-          "valueType": "string"
+          "component": "boolean",
+          "valueType": "boolean",
+          "name": "overlay",
+          "label": "Enable Overlay",
+          "value": true
         }
       ]
     }
   ],
-  "filters": []
+  "filters": [
+    {
+      "id": "hero",
+      "components": [
+        "text",
+        "title",
+        "button",
+        "cards"
+      ]
+    }
+  ]
 }
