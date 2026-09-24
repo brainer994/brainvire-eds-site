@@ -42,8 +42,6 @@
   {
     "id": "hero",
     "components": [
-      "text",
-      "title",
       "button",
       "cards"
     ]
