@@ -38,12 +38,5 @@
       "button",
       "title"
     ]
-  },
-  {
-    "id": "hero",
-    "components": [
-      "button",
-      "cards"
-    ]
   }
 ]
