@@ -24,21 +24,49 @@
           "component": "reference",
           "valueType": "string",
           "name": "image",
-          "label": "Image",
+          "label": "Poster / Fallback Image",
           "multi": false
         },
         {
           "component": "text",
           "valueType": "string",
-          "name": "imageAlt",
-          "label": "Alt",
+          "name": "videoUrl",
+          "label": "Background Video URL (.mp4)",
           "value": ""
         },
         {
           "component": "richtext",
           "name": "text",
           "value": "",
-          "label": "Text",
+          "label": "Content (H1, paragraph, buttons)",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "focusCard1",
+          "value": "",
+          "label": "Focus Card 1",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "focusCard2",
+          "value": "",
+          "label": "Focus Card 2",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "focusCard3",
+          "value": "",
+          "label": "Focus Card 3",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "focusCard4",
+          "value": "",
+          "label": "Focus Card 4",
           "valueType": "string"
         }
       ]

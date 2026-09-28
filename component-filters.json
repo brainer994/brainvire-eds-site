@@ -19,9 +19,27 @@
     ]
   },
   {
+    "id": "accelerator-cards",
+    "components": [
+      "accelerator-card-item"
+    ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "accordion-item"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "case-study-cards",
+    "components": [
+      "case-study-item"
     ]
   },
   {
@@ -37,6 +55,36 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "marquee",
+    "components": [
+      "marquee-item"
+    ]
+  },
+  {
+    "id": "service-cards",
+    "components": [
+      "service-card-item"
+    ]
+  },
+  {
+    "id": "stats-counter",
+    "components": [
+      "stat-item"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tab-item"
+    ]
+  },
+  {
+    "id": "testimonials",
+    "components": [
+      "testimonial-item"
     ]
   }
 ]

@@ -1,10 +1,13 @@
+/* ── base columns ── */
 .columns > div {
   display: flex;
   flex-direction: column;
+  gap: 24px;
 }
 
 .columns img {
   width: 100%;
+  border-radius: 4px;
 }
 
 .columns > div > div {
@@ -22,12 +25,73 @@
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
-    flex-direction: unset;
-    gap: 24px;
+    flex-direction: row;
+    gap: 48px;
   }
 
   .columns > div > div {
     flex: 1;
     order: unset;
+  }
+}
+
+/* ── 4-col grid variant: intelligence layer modules ── */
+.columns.modules-grid > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  align-items: stretch;
+}
+
+.columns.modules-grid > div > div {
+  padding: 34px 28px;
+  border-right: 1px solid rgb(255 255 255 / 10%);
+  order: unset;
+  flex: unset;
+}
+
+.columns.modules-grid > div > div:first-child {
+  padding-left: 0;
+}
+
+.columns.modules-grid > div > div:last-child {
+  border-right: none;
+}
+
+.columns.modules-grid p {
+  font-size: 14px;
+  color: rgb(255 255 255 / 65%);
+  line-height: 1.6;
+}
+
+.columns.modules-grid p:first-child {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #dcebff;
+  margin-bottom: 14px;
+}
+
+/* ── section highlight override for dark gradient ── */
+.section.highlight .columns.modules-grid {
+  background: transparent;
+}
+
+@media (width <= 960px) {
+  .columns.modules-grid > div {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .columns.modules-grid > div > div {
+    border-right: none;
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+    padding-left: 0;
+  }
+}
+
+@media (width <= 600px) {
+  .columns.modules-grid > div {
+    grid-template-columns: 1fr;
   }
 }

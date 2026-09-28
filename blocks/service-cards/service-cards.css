@@ -1,0 +1,115 @@
+.service-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-top: 48px;
+}
+
+.service-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 42px 34px 36px;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color);
+  position: relative;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 56px;
+  height: 3px;
+  background: var(--link-color);
+  transition: width 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 48px -24px rgb(11 13 16 / 22%);
+}
+
+.service-card:hover::before {
+  width: 100%;
+}
+
+.service-card-index {
+  font-size: 14px;
+  font-weight: 700;
+  color: #b4bac2;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.service-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: var(--text-color);
+}
+
+.service-card h3 small {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--link-color);
+  letter-spacing: 0.02em;
+  margin-top: 8px;
+  font-family: var(--body-font-family);
+}
+
+.service-card-desc {
+  font-size: 14px;
+  color: var(--dark-color);
+  margin: 16px 0 22px;
+  line-height: 1.6;
+}
+
+.service-card-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+  flex: 1;
+}
+
+.service-card-bullets li {
+  font-size: 14px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--light-color);
+  color: #333b45;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.service-card-bullets li::before {
+  content: "/";
+  color: var(--link-color);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.service-card-cta {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-color);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto;
+  transition: color 0.2s;
+}
+
+.service-card:hover .service-card-cta {
+  color: var(--link-color);
+}
+
+@media (width <= 960px) {
+  .service-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -323,3 +323,63 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* dark gradient section (intelligence layer, testimonials, CTA) */
+main .section.dark {
+  background: linear-gradient(120deg, #141414 0%, #333 20%, #0141a2 50%, #0162f4 70%, #333 90%, #141414 100%);
+  background-size: 260% 260%;
+  animation: section-gradient-pan 36s linear infinite;
+  color: #fff;
+  margin: 0;
+  padding: 60px 0;
+}
+
+@keyframes section-gradient-pan {
+  0% { background-position: 50% 50%; }
+  50% { background-position: 50% 20%; }
+  100% { background-position: 50% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main .section.dark {
+    animation: none;
+    background: #141414;
+  }
+}
+
+/* section kicker label */
+.section-kicker {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.section.dark .section-kicker {
+  color: rgb(255 255 255 / 70%);
+}
+
+/* section heading utility */
+.section h2 {
+  font-size: clamp(28px, 3.1vw, 45px);
+}
+
+.section.dark h2 {
+  color: #fff;
+}
+
+/* section sub-text */
+.section-sub {
+  font-size: 16px;
+  color: var(--dark-color);
+  max-width: 680px;
+  margin: 12px 0 0;
+  line-height: 1.65;
+}
+
+.section.dark .section-sub {
+  color: rgb(255 255 255 / 70%);
+}

@@ -1,0 +1,33 @@
+.stats-counter {
+  background: var(--text-color);
+  color: var(--background-color);
+  padding: 60px 24px;
+}
+
+.stats-counter-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.stat-item {
+  text-align: center;
+  min-width: 160px;
+}
+
+.stat-value {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: var(--heading-font-family);
+  color: var(--link-color);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: var(--body-font-size-s);
+  margin-top: 8px;
+  opacity: 0.85;
+}
